@@ -5,41 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kişisel Web Sitem - Anasayfa</title>
-    <style type="text/css">
-    body{
-        margin:0;
-        font-size:16px;
-        font-family: Helvetica, sans-serif;
-    }
-    a { color:#000000; text-decoration: none; }
+    <link rel="stylesheet" href="./style.css" />
 
-    .menu{
-        width: 90%; 
-        height: auto; 
-        background-color:#e43f3f; 
-        color:#FFFFFF; 
-        margin:5px auto;
-        padding:3px 5px;
-        text-align: center;
-        position: fixed;
-        left: 5%;
-    }
-    .menu ul {
-        list-style: none;
-        display: inline-block;
-        margin:auto;
-    }
-    .menu ul li{
-        float: left;
-        margin-right: 15px;
-    }
-    .menu ul li a {
-        color:#FFFFFF;
-    }
-    .menu ul li a:hover {
-        color:#000000;
-    }
-    </style>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $("#mailGonder").click(function(){
+            var adSoyad = $("#adsoyad").val();
+            var eposta = $("#eposta").val();
+            var aciklama = $("#aciklama").val();
+
+            if(adSoyad === null || adSoyad === ""){
+                alert("Lütfen Ad soyad boş geçmeyiniz");
+                return false;
+            }
+            else if(eposta === null || eposta === ""){
+                alert("Lütfen E-posta alanını boş geçmeyiniz");
+                return false;
+            }
+            else if(aciklama === null || aciklama === ""){
+                alert("Lütfen Açıklamanızı yazınız");
+                return false;
+            }
+            else {
+                // Bütün durumları geçtiği zaman ne yaptırmak isterseniz
+                // Buraya yazın
+            }
+        });
+    });
+    </script>
 </head>
 <body>
     <div class="menu">
@@ -51,10 +48,98 @@
         </ul>
     </div>
 
+    <div class="ortakisim">
+        <div class="ustKisim">
 
-    <div style="width: 100%; height: 1000px;"></div>
+        </div>
+        <h2>Lorem Ipsum Nedir?</h2>
+        <p>
+            Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur.
+        </p>
 
-    <div class="altKisim">
+        <br><br>
+        <div class="galeri">
+            <div class="resim">
+                <a data-fancybox="gallery" href="https://images.unsplash.com/photo-1613556817902-a1e2b15ebf22?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"><img src="./img/arkaplan.jpeg" alt="Ütü" /></a>
+            </div>
+            <div class="resim">
+                <a data-fancybox="gallery" href="./img/arkaplan-2.jpeg"><img src="./img/arkaplan.jpeg" alt="Çamaşır Makinesi" /></a>
+            </div>
+            <div class="resim">
+                <a data-fancybox="gallery" href="./img/arkaplan-2.jpeg"><img src="./img/arkaplan.jpeg" alt="" /></a>
+            </div>
+            <div class="resim">
+                <a data-fancybox="gallery" href="./img/arkaplan-2.jpeg"><img src="./img/arkaplan.jpeg" /></a>
+            </div>
+            <div class="resim">
+                <a data-fancybox="gallery" href="./img/arkaplan-2.jpeg"><img src="./img/arkaplan.jpeg" /></a>
+            </div>
+            <div class="resim">
+                <a data-fancybox="gallery" href="./img/arkaplan-2.jpeg"><img src="./img/arkaplan.jpeg" /></a>
+            </div>
+        </div>
+    
+        <!--
+        <div style="width: 80%; margin: auto; height: 0; border:solid 1px #000000;"></div>
+        -->
+        <hr style="width: 80%;">
+
+        <div class="iletisim">
+            <div class="googleMap">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.2327155788207!2d29.005667196533974!3d41.020164346080584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab8292005f0f9%3A0x992ba96a84bee37!2sK%C4%B1z%20Kulesi!5e0!3m2!1str!2str!4v1613586583297!5m2!1str!2str" style="border:0; width: 100%; height: 600px;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+            <div class="iletisimBilgilerimiz">
+                <h3 style="text-align: center;">İletişim Bilgilerimiz</h3>
+                <p><span>Adres:</span> Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir.</p>
+                <p><span>Mağaza Adresi:</span> Yaygın inancın tersine, Lorem Ipsum rastgele sözcüklerden oluşmaz.</p>
+                <p>
+                    <span>Mail Adresimiz:</span>
+                    <a href="mailto:info@orneksite.com">info@orneksite.com</a>
+                </p>
+
+                <h3 style="text-align: center; margin-top: 50px;">İletişim Bilgilerimiz</h3>
+
+                <form action="?" method="POST" enctype="application/x-www-form-urlencoded">
+                    <div style="width: 100%; height: 50px;">
+                        <div style="width: 20%; float: left;">
+                            <label for="adsoyad">Ad Soyad:</label>
+                        </div>
+                        <div style="width: 80%; float: left;">
+                            <input type="text" name="adsoyad" id="adsoyad" placeholder="Ad Soyad" autocomplete="off"  />
+                        </div>
+                    </div>
+
+                    <div style="width: 100%; height: 50px;">
+                        <div style="width: 20%; float: left;">
+                            <label for="eposta">E-mail Adresiniz:</label>
+                        </div>
+                        <div style="width: 80%; float: left;">
+                            <input type="email" name="eposta" id="eposta" placeholder="E-posta" autocomplete="off" />
+                        </div>
+                    </div>
+
+                    <div style="width: 100%; height: auto; display: inline-block;">
+                        <div style="width: 20%; float: left;">
+                            <label for="aciklama">Açıklama:</label>
+                        </div>
+                        <div style="width: 80%; float: left;">
+                            <textarea name="aciklama" id="aciklama" placeholder="Açıklama" rows="5"></textarea>
+                        </div>
+                    </div>
+
+                    <div style="width: 100%; height: auto; display: inline-block;">
+                        <!-- <input type="submit" name="gonder" id="mailGonder" value="GÖNDER" /> -->
+                        <button type="submit" name="gonder" id="mailGonder">Gönder Gelsin</button>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div id="altKisim">
         2021. Tüm Hakları Saklıdır.
     </div>
 
