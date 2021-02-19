@@ -1,0 +1,67 @@
+
+.sliderContainer{
+    height: 40vh !important;
+}
+
+.headerContainer{
+    height: 20vh !important;
+}
+
+.aboutUs{
+    height: 260px !important;
+}
+
+.blog{
+    /*
+    Arkaplan yapılacak.
+    */
+}
+
+#about p{
+    text-indent: 30px;
+}
+
+.card{
+    border-radius:10px !important;
+}
+.card img {
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+}
+
+.btn{
+    box-shadow: black 1px 1px 5px 1px;
+}
+
+.socialMedia i {
+    font-size:25px;
+}
+
+.custom-bg-dark{
+    background-color: #131618!important;
+}
+
+
+.custom-bg {
+    background-image: linear-gradient(rgb(0 0 0 / 73%), rgb(27 27 27 / 71%)), url(../img/arkaplan.jpeg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.breadcrumb-item a {
+    color: white;
+    text-decoration: none;
+}
+.breadcrumb-item a:hover {
+    color: rgb(200, 200, 200);
+}
+
+.breadcrumb-item.active {
+    color: rgb(170, 170, 170) !important;
+}
+
+
+#comment {
+    resize: none;
+}

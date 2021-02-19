@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link type="text/css" rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+
+    <link rel="stylesheet" href="./js/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./js/assets/owl.theme.default.min.css">
+    
+    <link type="text/css" rel="stylesheet" href="./css/_custom.css" />
+
+    <style>
+        .swiper-container {
+            width: 100% !important;
+            height: 100%;
+        }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+    </style>
+
+    
+    <title>Anasayfa</title>
+</head>
+<body>
+    <header id="header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary py-3">
+            <div class="container">
+              <a class="navbar-brand" href="index.html">DSC Üsküdar Üniversitesi</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Anasayfa</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Kurumsal
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="hakkimizda.html">Hakkımızda</a></li>
+                      <li><a class="dropdown-item" href="hakkimizda.html">Vizyonumuz</a></li>
+                      <li><a class="dropdown-item" href="hakkimizda.html">Misyonumuz</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="galeri.html">Galeri</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="blog.html">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="iletisim.html">İletişim</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="bg-dark" id="hero">
+        <div class="container">
+            <div class="d-flex h-100 flex-column text-light justify-content-center sliderContainer">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./img/arkaplan.jpeg"></div>
+                        <div class="swiper-slide"><img src="./img/arkaplan.jpeg"></div>
+                        <div class="swiper-slide"><img src="./img/arkaplan.jpeg"></div>
+                        <div class="swiper-slide"><img src="./img/arkaplan.jpeg"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="about">
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col-sm-12 col-md-4 order-2">
+                    <img src="./img/resim-1.jpeg" class="img-fluid" />
+                </div>
+                <div class="col-sm-12 col-md-8 order-1">
+                    <div class="d-flex h-100 flex-column justify-content-center aboutUs">
+                        <h2 class="display-5">Bizi Tanıyın.</h2>
+                        <p>Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog mt-3" id="blogHome">
+        <div class="container-fluid bg-dark py-3">
+            <h2 class="display-6 text-white text-center py-3">Blog</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="owl-carousel owl-theme">
+                        <div class="col-lg-3 col-md-3">
+                            <div class="card" style="width: 18rem;">
+                                <img src="./img/resim-1.jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Blog Başlık</h5>
+                                    <p class="card-text">Açıklama alanı.</p>
+                                    <a href="#" class="btn btn-primary">Detay</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                            <div class="card" style="width: 18rem;">
+                                <img src="./img/resim-1.jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Blog Başlık</h5>
+                                    <p class="card-text">Açıklama alanı.</p>
+                                    <a href="#" class="btn btn-primary">Detay</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                            <div class="card" style="width: 18rem;">
+                                <img src="./img/resim-1.jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Blog Başlık</h5>
+                                    <p class="card-text">Açıklama alanı.</p>
+                                    <a href="#" class="btn btn-primary">Detay</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery mt-3 mb-3">
+        <div class="container py-3">
+            <h2 class="display-6 text-black text-center py-3">Galeri</h2>
+            <div class="row g-3">
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <a href="./img/resim-1.jpeg" data-fancybox="gallery">
+                        <img src="./img/resim-1.jpeg" class="img-fluid" alt="Resim 1" />
+                    </a>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Başlık</h5>
+                        <!-- <p class="card-text">Açıklama alanı.</p> -->
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <a href="./img/resim-1.jpeg" data-fancybox="gallery">
+                        <img src="./img/resim-1.jpeg" class="img-fluid" alt="Resim 1" />
+                    </a>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Başlık</h5>
+                        <!-- <p class="card-text">Açıklama alanı.</p> -->
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <a href="./img/resim-1.jpeg" data-fancybox="gallery">
+                        <img src="./img/resim-1.jpeg" class="img-fluid" alt="Resim 1" />
+                    </a>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Başlık</h5>
+                        <!-- <p class="card-text">Açıklama alanı.</p> -->
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <a href="./img/resim-1.jpeg" data-fancybox="gallery">
+                        <img src="./img/resim-1.jpeg" class="img-fluid" alt="Resim 1" />
+                    </a>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Başlık</h5>
+                        <!-- <p class="card-text">Açıklama alanı.</p> -->
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <a href="./img/resim-1.jpeg" data-fancybox="gallery">
+                        <img src="./img/resim-1.jpeg" class="img-fluid" alt="Resim 1" />
+                    </a>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Başlık</h5>
+                        <!-- <p class="card-text">Açıklama alanı.</p> -->
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <a href="./img/resim-1.jpeg" data-fancybox="gallery">
+                        <img src="./img/resim-1.jpeg" class="img-fluid" alt="Resim 1" />
+                    </a>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Başlık</h5>
+                        <!-- <p class="card-text">Açıklama alanı.</p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="bg-dark">
+        <div class="container py-5">
+            <h2 class="display-6 text-dark mb-3 text-white">İletişim Bilgilerimiz</h2>
+            <div class="row">
+                <div class="col-md-12 col-lg-6">
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <div class="input-group flex-nowrap">
+                                <input type="text" class="form-control" placeholder="Adınız" aria-label="adsoyad" aria-describedby="addon-wrapping">
+                              </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="input-group flex-nowrap">
+                                <input type="email" class="form-control" placeholder="Mail Adresiniz" aria-label="adsoyad" aria-describedby="addon-wrapping">
+                              </div>
+                        </div>
+                        <div class="col-12">
+                            <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                <option hidden value="0">Lütfen Şehir Seçiniz</option>
+                                <option value="1">Ankara</option>
+                                <option value="2">İstanbul</option>
+                                <option value="3">Bursa</option>
+                                <option value="4">İzmir</option>
+                              </select>
+                        </div>
+                        <div class="col-12">
+                            <textarea class="form-control" aria-label="With textarea" placeholder="Mesajınız"></textarea>
+                        </div>
+                        <div class="col-md-12">
+                            <button type="button" class="btn btn-secondary">Gönder</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-6">
+                    <div class="row">
+                        <div class="col-md-12 text-white text-center">
+                            Adres: Adres bilgisi <br>
+                            Mağaza Adresi: - <br>
+
+                            <br><br>
+                            Sosyal Medya Hesaplarımız: <br>
+                            <a href="https://www.facebook.com" class="me-3 socialMedia" target="_blank">
+                                <i class="fab fa-facebook text-light"></i>
+                            </a>
+                            <a href="https://www.facebook.com" class="me-3 socialMedia" target="_blank">
+                                <i class="fab fa-twitter text-light"></i>
+                            </a>
+                            <a href="https://www.facebook.com" class="me-3 socialMedia" target="_blank">
+                                <i class="fab fa-instagram text-light"></i>
+                            </a>
+                            <a href="https://www.facebook.com" class="me-3 socialMedia" target="_blank">
+                                <i class="fab fa-youtube text-light"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="custom-bg-dark">
+        <div class="container text-center text-white py-3">
+            2021. Tüm hakları saklıdır.
+        </div>
+    </footer>
+
+    
+    <script type="text/javascript" src="./js/bootstrap.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="./js/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+        $(document).ready(function(){
+            $('.owl-carousel').owlCarousel({
+                loop:true,
+                margin:10,
+                nav:false,
+                dots:true,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    600:{
+                        items:3
+                    },
+                    1000:{
+                        items:4
+                    }
+                }
+            });
+        });
+
+      </script>
+    
+</body>
+</html>

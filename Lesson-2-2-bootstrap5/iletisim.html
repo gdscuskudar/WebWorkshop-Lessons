@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link type="text/css" rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link type="text/css" rel="stylesheet" href="./css/_custom.css" />
+
+    <script type="text/javascript" src="./js/bootstrap.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+    <title>İletişim</title>
+</head>
+<body>
+    <header id="header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary py-3">
+            <div class="container">
+              <a class="navbar-brand" href="index.html">DSC Üsküdar Üniversitesi</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Anasayfa</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Kurumsal
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="hakkimizda.html">Hakkımızda</a></li>
+                      <li><a class="dropdown-item" href="hakkimizda.html">Vizyonumuz</a></li>
+                      <li><a class="dropdown-item" href="hakkimizda.html">Misyonumuz</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="galeri.html">Galeri</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="blog.html">Blog</a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link active" aria-current="page" href="iletisim.html">İletişim</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="bg-dark custom-bg" id="hero">
+        <div class="container">
+            <div class="d-flex h-100 flex-column text-light justify-content-center headerContainer">
+                
+            </div>
+            <div class="row py-1">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="index.html">Anasayfa</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">İletişim</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="about">
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-sm-12 col-md-12">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.1889662796957!2d29.00192181591766!3d41.02112157929949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab82bea99445f%3A0x6ed7f4baceb4476c!2sK%C4%B1z%20Kulesi!5e0!3m2!1str!2str!4v1613753408997!5m2!1str!2str" style="border:0; width: 100%; height: 500px;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+            <div class="row">
+                <div class="container py-5">
+                    <h2 class="display-6 text-dark mb-3 text-black">İletişim Bilgilerimiz</h2>
+                    <div class="row">
+                        <div class="col-md-12 col-lg-6">
+                            <div class="alert alert-success d-none" role="alert">
+                                <h4 class="alert-heading">Well done!</h4>
+                                <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+                                <hr>
+                                <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+                              </div>
+                            <div class="row g-3 customformElements">
+                                <div class="col-6">
+                                    <div class="input-group flex-nowrap">
+                                        <input type="text" id="adsoyad" class="form-control" placeholder="Adınız" aria-label="adsoyad" aria-describedby="addon-wrapping">
+                                      </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="input-group flex-nowrap">
+                                        <input type="email" id="eposta" class="form-control" placeholder="Mail Adresiniz" aria-label="adsoyad" aria-describedby="addon-wrapping">
+                                      </div>
+                                </div>
+                                <div class="col-12">
+                                    <select id="sehir" class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                        <option hidden value="0">Lütfen Şehir Seçiniz</option>
+                                        <option value="1">Ankara</option>
+                                        <option value="2">İstanbul</option>
+                                        <option value="3">Bursa</option>
+                                        <option value="4">İzmir</option>
+                                      </select>
+                                </div>
+                                <div class="col-12">
+                                    <textarea class="form-control" id="comment" rows="5" aria-label="With textarea" placeholder="Mesajınız"></textarea>
+                                </div>
+                                <div class="col-md-12">
+                                    <button type="button" name="gonder" id="gonder" class="btn btn-secondary">Gönder</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-6">
+                            <div class="row">
+                                <div class="col-md-12 text-black text-center">
+                                    Adres: Adres bilgisi <br>
+                                    Mağaza Adresi: - <br>
+        
+                                    <br><br>
+                                    Sosyal Medya Hesaplarımız: <br>
+                                    <a href="https://www.facebook.com" class="me-3 socialMedia" target="_blank">
+                                        <i class="fab fa-facebook text-dark"></i>
+                                    </a>
+                                    <a href="https://www.facebook.com" class="me-3 socialMedia" target="_blank">
+                                        <i class="fab fa-twitter text-dark"></i>
+                                    </a>
+                                    <a href="https://www.facebook.com" class="me-3 socialMedia" target="_blank">
+                                        <i class="fab fa-instagram text-dark"></i>
+                                    </a>
+                                    <a href="https://www.facebook.com" class="me-3 socialMedia" target="_blank">
+                                        <i class="fab fa-youtube text-dark"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="custom-bg-dark">
+        <div class="container text-center text-white py-3">
+            2021. Tüm hakları saklıdır.
+        </div>
+    </footer>
+
+    
+</body>
+</html>
